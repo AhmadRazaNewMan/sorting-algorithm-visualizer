@@ -24,7 +24,7 @@ const sortingAlgorithmContext = createContext<SortingAlgorithmContextType | unde
 
 
 export const SortingAlgorithmProvider = ({children}:{children: React.ReactNode})=>{
-    const [ arrayToSort,setArratToSort] = useState<number []>([])
+    const [ arrayToSort,setArratToSort] = useState<number []>([100,200,75,60,150])
     const [selectedAlgorithm,setSelectedAlgorithm] = useState<SortingAlgorithmType>("Bubble Sort")
     const [isSorting,setIsSorting] = useState<boolean>(false)
     const [animationSpeed,setAnimationSpeed] = useState<number>(min_animation_speed)
